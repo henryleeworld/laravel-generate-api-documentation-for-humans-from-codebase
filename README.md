@@ -30,5 +30,5 @@ $ php artisan scribe:generate
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/Qmzzto1.png)
+![](https://i.imgur.com/tG8St93.png)
 > 建議找不同領域或程度的開發者來閱讀文件，確認文件的內容適合任何程度的人閱讀
