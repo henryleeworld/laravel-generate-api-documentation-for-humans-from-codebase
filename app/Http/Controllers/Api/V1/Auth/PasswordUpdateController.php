@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Api\V1\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules\Password;
 
 /**
@@ -21,7 +20,7 @@ class PasswordUpdateController extends Controller
         ]);
 
         auth()->user()->update([
-            'password' => Hash::make($request->input('password')),
+            'password' => $request->input('password'),
         ]);
 
         return response()->json([
