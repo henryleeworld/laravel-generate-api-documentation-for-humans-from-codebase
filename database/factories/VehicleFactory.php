@@ -14,7 +14,7 @@ class VehicleFactory extends Factory
      *
      * @return array<string, mixed>
      */
-    public function definition()
+    public function definition(): array
     {
         return [
             'plate_number' => strtoupper(fake()->randomLetter()) . fake()->numberBetween(100, 999)
